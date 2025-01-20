@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/bottom_nav_fragment1"
-        android:title="Icon1"/>
+        android:id="@+id/item1"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Recycler"/>
     <item
-        android:id="@+id/bottom_nav_fragment2"
-        android:title="Icon2"/>
+        android:id="@+id/item2"
+        android:icon="@drawable/ic_launcher_foreground2"
+        android:title="ViewPager"/>
 </menu>

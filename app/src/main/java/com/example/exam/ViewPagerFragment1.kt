@@ -12,5 +12,6 @@ class ViewPagerFragment1: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.view_fragment1,container,false)    }
+        return inflater.inflate(R.layout.itemview1,container,false)
+    }
 }

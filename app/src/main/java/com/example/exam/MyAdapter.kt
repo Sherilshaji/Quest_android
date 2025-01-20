@@ -1,11 +1,10 @@
 package com.example.exam
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class MyAdapter(): RecyclerView.Adapter<MyViewHolder>() {
+class MyAdapter(activity:RecyclerViewMain): RecyclerView.Adapter<MyViewHolder>() {
 
     private var mutableList= mutableListOf(
         "ABC",
@@ -22,7 +21,7 @@ class MyAdapter(): RecyclerView.Adapter<MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val mContext=parent.context
         val layoutInflater=LayoutInflater.from(mContext)
-        val view=layoutInflater.inflate(R.layout.recycler_main,parent,false)
+        val view=layoutInflater.inflate(R.layout.recyclerview_row,parent,false)
         return MyViewHolder(view)
     }
 

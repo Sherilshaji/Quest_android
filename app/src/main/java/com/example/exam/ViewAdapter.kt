@@ -3,7 +3,7 @@ package com.example.exam
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class ViewAdapter(activity: FragmentTwo):FragmentStateAdapter(activity) {
+class ViewAdapter(fragment: Fragment):FragmentStateAdapter(fragment) {
 
     val mFragmentList:MutableList<Fragment> = ArrayList()
     val mFragmentTitleList:MutableList<String> = ArrayList()

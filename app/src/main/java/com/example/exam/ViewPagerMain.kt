@@ -9,7 +9,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
-class FragmentTwo: Fragment() {
+class ViewPagerMain: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -29,7 +29,7 @@ class FragmentTwo: Fragment() {
 
         viewPager.adapter=adapter
         viewPager.currentItem=0
-        viewPager.offscreenPageLimit=1
+        viewPager.offscreenPageLimit=2
                 TabLayoutMediator(tabLayout, viewPager){ tab,position->
                     tab.text=adapter.getTabTitle(position)
                 }.attach()
